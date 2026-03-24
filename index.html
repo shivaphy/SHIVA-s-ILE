@@ -862,21 +862,21 @@ footer{background:var(--dk);padding:60px 40px 28px}
       <button class="chip level-chip">🎓 Higher Education</button>
       <button class="chip level-chip">🏫 High School</button>
     </div>
-    <div class="sim-g">
-      <div class="sim-card"><div class="sim-thumb bg1"><span class="sim-tag">Biology</span>🧬</div><div class="sim-body"><h4>DNA Extraction & PCR</h4><p>Isolate DNA and amplify sequences using polymerase chain reaction.</p><div class="sim-meta"><span class="sim-lv">⭐ Intermediate</span><button class="sim-go">Start Lab →</button></div></div></div>
-      <div class="sim-card"><div class="sim-thumb bg2c"><span class="sim-tag">Chemistry</span><span class="sim-new">New</span>⚗️</div><div class="sim-body"><h4>Acid-Base Titration</h4><p>Determine unknown concentrations through precise volumetric analysis.</p><div class="sim-meta"><span class="sim-lv">⭐ Beginner</span><button class="sim-go">Start Lab →</button></div></div></div>
-      <div class="sim-card"><div class="sim-thumb bg3c"><span class="sim-tag">Physics</span>🔭</div><div class="sim-body"><h4>Snell's Law & Optics</h4><p>Investigate refraction, total internal reflection, and lens behaviour in 3D.</p><div class="sim-meta"><span class="sim-lv">⭐ Beginner</span><button class="sim-go">Start Lab →</button></div></div></div>
-      <div class="sim-card"><div class="sim-thumb bg4c"><span class="sim-tag">Health</span>🏥</div><div class="sim-body"><h4>Blood Typing & Transfusion</h4><p>Identify ABO/Rh blood groups and simulate safe transfusion protocols.</p><div class="sim-meta"><span class="sim-lv">⭐⭐ Advanced</span><button class="sim-go">Start Lab →</button></div></div></div>
-      <div class="sim-card"><div class="sim-thumb bg5c"><span class="sim-tag">Earth</span>🌍</div><div class="sim-body"><h4>Ecosystem Dynamics</h4><p>Model predator-prey relationships and simulate climate change scenarios.</p><div class="sim-meta"><span class="sim-lv">⭐ Beginner</span><button class="sim-go">Start Lab →</button></div></div></div>
-      <div class="sim-card"><div class="sim-thumb bg6c"><span class="sim-tag">Neuro</span>🧠</div><div class="sim-body"><h4>Action Potential Simulation</h4><p>Visualise sodium-potassium pumps and nerve impulse propagation in real-time.</p><div class="sim-meta"><span class="sim-lv">⭐⭐ Advanced</span><button class="sim-go">Start Lab →</button></div></div></div>
-      <div class="sim-card"><div class="sim-thumb bg7c"><span class="sim-tag">Genetics</span>🧫</div><div class="sim-body"><h4>Mendelian Genetics</h4><p>Perform virtual crosses, analyse phenotype ratios, and map dominant traits.</p><div class="sim-meta"><span class="sim-lv">⭐ Beginner</span><button class="sim-go">Start Lab →</button></div></div></div>
-      <div class="sim-card"><div class="sim-thumb bg8c"><span class="sim-tag">Chemistry</span><span class="sim-new">New</span>🔥</div><div class="sim-body"><h4>Flame Test & Spectroscopy</h4><p>Identify elements by their emission spectra using virtual flame tests.</p><div class="sim-meta"><span class="sim-lv">⭐ Beginner</span><button class="sim-go">Start Lab →</button></div></div></div>
-      <div class="sim-card"><div class="sim-thumb bg9c"><span class="sim-tag">Health</span>🩺</div><div class="sim-body"><h4>ECG & Heart Rhythms</h4><p>Read electrocardiograms and identify normal and abnormal cardiac patterns.</p><div class="sim-meta"><span class="sim-lv">⭐⭐ Advanced</span><button class="sim-go">Start Lab →</button></div></div></div>
-      <div class="sim-card"><div class="sim-thumb bg10c"><span class="sim-tag">Biology</span>🌱</div><div class="sim-body"><h4>Photosynthesis & Respiration</h4><p>Investigate the light-dependent and light-independent reactions in plant cells.</p><div class="sim-meta"><span class="sim-lv">⭐ Intermediate</span><button class="sim-go">Start Lab →</button></div></div></div>
-      <div class="sim-card"><div class="sim-thumb bg11c"><span class="sim-tag">Physics</span>⚛️</div><div class="sim-body"><h4>Radioactive Decay</h4><p>Simulate half-life, decay chains, and radiation safety in a virtual nuclear lab.</p><div class="sim-meta"><span class="sim-lv">⭐⭐ Advanced</span><button class="sim-go">Start Lab →</button></div></div></div>
-      <div class="sim-card"><div class="sim-thumb bg12c"><span class="sim-tag">Biochem</span>🧪</div><div class="sim-body"><h4>Enzyme Kinetics</h4><p>Measure reaction rates, plot Michaelis-Menten curves, and test inhibitors.</p><div class="sim-meta"><span class="sim-lv">⭐⭐ Advanced</span><button class="sim-go">Start Lab →</button></div></div></div>
+    <div class="sim-g" id="simGrid">
+      <div class="sim-card" onclick="openLab(0)"><div class="sim-thumb bg1"><span class="sim-tag">Biology</span>🧬</div><div class="sim-body"><h4>DNA Extraction &amp; PCR</h4><p>Isolate DNA and amplify sequences using polymerase chain reaction.</p><div class="sim-meta"><span class="sim-lv">⭐ Intermediate</span><button class="sim-go">Start Lab →</button></div></div></div>
+      <div class="sim-card" onclick="openLab(1)"><div class="sim-thumb bg2c"><span class="sim-tag">Chemistry</span><span class="sim-new">New</span>⚗️</div><div class="sim-body"><h4>Acid-Base Titration</h4><p>Determine unknown concentrations through precise volumetric analysis.</p><div class="sim-meta"><span class="sim-lv">⭐ Beginner</span><button class="sim-go">Start Lab →</button></div></div></div>
+      <div class="sim-card" onclick="openLab(2)"><div class="sim-thumb bg3c"><span class="sim-tag">Physics</span>🔭</div><div class="sim-body"><h4>Snell's Law &amp; Optics</h4><p>Investigate refraction, total internal reflection, and lens behaviour in 3D.</p><div class="sim-meta"><span class="sim-lv">⭐ Beginner</span><button class="sim-go">Start Lab →</button></div></div></div>
+      <div class="sim-card" onclick="openLab(3)"><div class="sim-thumb bg4c"><span class="sim-tag">Health</span>🏥</div><div class="sim-body"><h4>Blood Typing &amp; Transfusion</h4><p>Identify ABO/Rh blood groups and simulate safe transfusion protocols.</p><div class="sim-meta"><span class="sim-lv">⭐⭐ Advanced</span><button class="sim-go">Start Lab →</button></div></div></div>
+      <div class="sim-card" onclick="openLab(4)"><div class="sim-thumb bg5c"><span class="sim-tag">Earth</span>🌍</div><div class="sim-body"><h4>Ecosystem Dynamics</h4><p>Model predator-prey relationships and simulate climate change scenarios.</p><div class="sim-meta"><span class="sim-lv">⭐ Beginner</span><button class="sim-go">Start Lab →</button></div></div></div>
+      <div class="sim-card" onclick="openLab(5)"><div class="sim-thumb bg6c"><span class="sim-tag">Neuro</span>🧠</div><div class="sim-body"><h4>Action Potential Simulation</h4><p>Visualise sodium-potassium pumps and nerve impulse propagation in real-time.</p><div class="sim-meta"><span class="sim-lv">⭐⭐ Advanced</span><button class="sim-go">Start Lab →</button></div></div></div>
+      <div class="sim-card" onclick="openLab(6)"><div class="sim-thumb bg7c"><span class="sim-tag">Genetics</span>🧫</div><div class="sim-body"><h4>Mendelian Genetics</h4><p>Perform virtual crosses, analyse phenotype ratios, and map dominant traits.</p><div class="sim-meta"><span class="sim-lv">⭐ Beginner</span><button class="sim-go">Start Lab →</button></div></div></div>
+      <div class="sim-card" onclick="openLab(7)"><div class="sim-thumb bg8c"><span class="sim-tag">Chemistry</span><span class="sim-new">New</span>🔥</div><div class="sim-body"><h4>Flame Test &amp; Spectroscopy</h4><p>Identify elements by their emission spectra using virtual flame tests.</p><div class="sim-meta"><span class="sim-lv">⭐ Beginner</span><button class="sim-go">Start Lab →</button></div></div></div>
+      <div class="sim-card" onclick="openLab(8)"><div class="sim-thumb bg9c"><span class="sim-tag">Health</span>🩺</div><div class="sim-body"><h4>ECG &amp; Heart Rhythms</h4><p>Read electrocardiograms and identify normal and abnormal cardiac patterns.</p><div class="sim-meta"><span class="sim-lv">⭐⭐ Advanced</span><button class="sim-go">Start Lab →</button></div></div></div>
+      <div class="sim-card" onclick="openLab(9)"><div class="sim-thumb bg10c"><span class="sim-tag">Biology</span>🌱</div><div class="sim-body"><h4>Photosynthesis &amp; Respiration</h4><p>Investigate the light-dependent and light-independent reactions in plant cells.</p><div class="sim-meta"><span class="sim-lv">⭐ Intermediate</span><button class="sim-go">Start Lab →</button></div></div></div>
+      <div class="sim-card" onclick="openLab(10)"><div class="sim-thumb bg11c"><span class="sim-tag">Physics</span>⚛️</div><div class="sim-body"><h4>Radioactive Decay</h4><p>Simulate half-life, decay chains, and radiation safety in a virtual nuclear lab.</p><div class="sim-meta"><span class="sim-lv">⭐⭐ Advanced</span><button class="sim-go">Start Lab →</button></div></div></div>
+      <div class="sim-card" onclick="openLab(11)"><div class="sim-thumb bg12c"><span class="sim-tag">Biochem</span>🧪</div><div class="sim-body"><h4>Enzyme Kinetics</h4><p>Measure reaction rates, plot Michaelis-Menten curves, and test inhibitors.</p><div class="sim-meta"><span class="sim-lv">⭐⭐ Advanced</span><button class="sim-go">Start Lab →</button></div></div></div>
     </div>
-    <div style="text-align:center;margin-top:36px"><a class="btn-big-out" href="#">Browse All 300+ Simulations →</a></div>
+    <div style="text-align:center;margin-top:36px"><a class="btn-big-out" href="#catalog">Browse All 300+ Simulations →</a></div>
   </div>
 </section>
 
@@ -1223,16 +1223,811 @@ footer{background:var(--dk);padding:60px 40px 28px}
   </div>
 </footer>
 
+<!-- ══════════ SIMULATION MODAL ══════════ -->
+<div id="labModal" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(15,10,40,.82);backdrop-filter:blur(8px);align-items:center;justify-content:center;padding:20px;">
+  <div id="labWindow" style="background:#fff;border-radius:20px;width:100%;max-width:900px;max-height:92vh;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 40px 120px rgba(0,0,0,.4);animation:modalIn .3s cubic-bezier(.34,1.56,.64,1);">
+    <!-- Modal Header -->
+    <div id="labHeader" style="display:flex;align-items:center;justify-content:space-between;padding:16px 22px;border-bottom:1.5px solid #e8e0d8;flex-shrink:0;">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <div id="labIcon" style="font-size:26px;"></div>
+        <div>
+          <div id="labTitle" style="font-family:'Nunito',sans-serif;font-weight:900;font-size:1.05rem;color:#1a1234;"></div>
+          <div id="labMeta" style="font-size:.72rem;font-weight:700;color:#9090aa;margin-top:2px;"></div>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;">
+        <div style="font-size:.78rem;font-weight:700;color:#9090aa;" id="stepIndicator"></div>
+        <button onclick="closeLab()" style="width:32px;height:32px;border-radius:8px;border:1.5px solid #e8e0d8;background:#f9f6f2;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;color:#55557a;font-family:'Nunito',sans-serif;">✕</button>
+      </div>
+    </div>
+    <!-- Progress Bar -->
+    <div style="height:5px;background:#f0eae2;flex-shrink:0;">
+      <div id="labProgress" style="height:100%;background:linear-gradient(90deg,#e85d26,#f7941d);border-radius:5px;transition:width .5s ease;width:0%"></div>
+    </div>
+    <!-- Tabs -->
+    <div style="display:flex;border-bottom:1.5px solid #e8e0d8;flex-shrink:0;padding:0 22px;gap:0;">
+      <button class="ltab act" onclick="switchLabTab(0)" id="lt0" style="font-family:'Nunito',sans-serif;font-weight:800;font-size:.8rem;padding:10px 16px;border:none;background:none;cursor:pointer;border-bottom:3px solid #e85d26;color:#e85d26;margin-bottom:-1.5px;">🔬 Simulation</button>
+      <button class="ltab" onclick="switchLabTab(1)" id="lt1" style="font-family:'Nunito',sans-serif;font-weight:800;font-size:.8rem;padding:10px 16px;border:none;background:none;cursor:pointer;border-bottom:3px solid transparent;color:#9090aa;margin-bottom:-1.5px;">📖 Theory</button>
+      <button class="ltab" onclick="switchLabTab(2)" id="lt2" style="font-family:'Nunito',sans-serif;font-weight:800;font-size:.8rem;padding:10px 16px;border:none;background:none;cursor:pointer;border-bottom:3px solid transparent;color:#9090aa;margin-bottom:-1.5px;">📝 Lab Notes</button>
+      <button class="ltab" onclick="switchLabTab(3)" id="lt3" style="font-family:'Nunito',sans-serif;font-weight:800;font-size:.8rem;padding:10px 16px;border:none;background:none;cursor:pointer;border-bottom:3px solid transparent;color:#9090aa;margin-bottom:-1.5px;">📊 Results</button>
+    </div>
+    <!-- Tab Content -->
+    <div id="tabSim" style="flex:1;overflow-y:auto;display:flex;flex-direction:column;">
+      <!-- Scene -->
+      <div id="labScene" style="min-height:220px;display:flex;align-items:center;justify-content:center;font-size:88px;position:relative;flex-shrink:0;"></div>
+      <!-- Step Content -->
+      <div style="padding:20px 24px;flex:1;">
+        <div id="stepTitle" style="font-family:'Nunito',sans-serif;font-weight:900;font-size:1.1rem;color:#1a1234;margin-bottom:8px;"></div>
+        <div id="stepDesc" style="font-size:.92rem;color:#55557a;line-height:1.72;font-weight:500;margin-bottom:18px;"></div>
+        <!-- Quiz -->
+        <div id="quizBox" style="background:#fdf4ee;border:1.5px solid #fde8dc;border-radius:14px;padding:18px;display:none;">
+          <div style="font-size:.78rem;font-weight:800;color:#e85d26;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px;">🧠 Knowledge Check</div>
+          <div id="quizQ" style="font-weight:700;font-size:.95rem;color:#1a1234;margin-bottom:14px;"></div>
+          <div id="quizOpts" style="display:flex;flex-direction:column;gap:8px;"></div>
+          <div id="quizFeedback" style="margin-top:12px;padding:10px 14px;border-radius:10px;font-size:.86rem;font-weight:600;display:none;"></div>
+        </div>
+        <!-- Interaction widgets live here -->
+        <div id="interactionZone"></div>
+      </div>
+    </div>
+    <div id="tabTheory" style="flex:1;overflow-y:auto;padding:24px;display:none;"></div>
+    <div id="tabNotes"  style="flex:1;overflow-y:auto;padding:24px;display:none;">
+      <div style="font-family:'Nunito',sans-serif;font-weight:800;font-size:.9rem;color:#1a1234;margin-bottom:10px;">📝 Your Lab Notes</div>
+      <textarea id="notesArea" placeholder="Type your observations, calculations, and conclusions here…" style="width:100%;min-height:280px;border:1.5px solid #e8e0d8;border-radius:12px;padding:14px;font-family:'Nunito',sans-serif;font-size:.9rem;color:#1a1234;resize:vertical;outline:none;line-height:1.7;"></textarea>
+    </div>
+    <div id="tabResults" style="flex:1;overflow-y:auto;padding:24px;display:none;"></div>
+    <!-- Footer Nav -->
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 22px;border-top:1.5px solid #e8e0d8;background:#fafafa;flex-shrink:0;">
+      <button onclick="prevStep()" id="btnPrev" style="font-family:'Nunito',sans-serif;font-weight:800;font-size:.86rem;padding:9px 20px;border-radius:50px;border:1.5px solid #e8e0d8;background:#fff;cursor:pointer;color:#55557a;transition:all .2s;">← Previous</button>
+      <div style="display:flex;gap:6px;" id="stepDots"></div>
+      <button onclick="nextStep()" id="btnNext" style="font-family:'Nunito',sans-serif;font-weight:800;font-size:.86rem;padding:9px 24px;border-radius:50px;border:none;background:linear-gradient(135deg,#e85d26,#f7941d);color:#fff;cursor:pointer;box-shadow:0 4px 14px rgba(232,93,38,.35);transition:all .2s;">Continue →</button>
+    </div>
+  </div>
+</div>
+
+<style>
+@keyframes modalIn{from{opacity:0;transform:scale(.92) translateY(20px)}to{opacity:1;transform:scale(1) translateY(0)}}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+@keyframes float2{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+@keyframes wave{0%,100%{transform:scaleY(1)}50%{transform:scaleY(1.5)}}
+.ltab{transition:all .2s}
+.ltab.act{color:#e85d26!important;border-bottom-color:#e85d26!important}
+.quiz-opt{padding:10px 14px;border-radius:10px;border:1.5px solid #e8e0d8;cursor:pointer;font-family:'Nunito',sans-serif;font-size:.88rem;font-weight:700;color:#1a1234;background:#fff;transition:all .2s;text-align:left}
+.quiz-opt:hover{border-color:#e85d26;background:#fff2ec}
+.quiz-opt.correct{border-color:#2ecc71;background:#f0fdf4;color:#166534}
+.quiz-opt.wrong{border-color:#ef4444;background:#fef2f2;color:#991b1b}
+.quiz-opt:disabled{cursor:not-allowed}
+.range-slider{width:100%;accent-color:#e85d26;height:6px;cursor:pointer}
+.sim-btn-action{font-family:'Nunito',sans-serif;font-weight:800;font-size:.88rem;padding:10px 22px;border-radius:50px;border:none;background:linear-gradient(135deg,#e85d26,#f7941d);color:#fff;cursor:pointer;box-shadow:0 4px 14px rgba(232,93,38,.3);transition:all .2s;margin-top:8px}
+.sim-btn-action:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(232,93,38,.4)}
+.scene-bg-bio{background:linear-gradient(135deg,#e8f5e9,#c8e6c9)}
+.scene-bg-chem{background:linear-gradient(135deg,#fff3e0,#ffe0b2)}
+.scene-bg-phy{background:linear-gradient(135deg,#e3f2fd,#bbdefb)}
+.scene-bg-med{background:linear-gradient(135deg,#fce4ec,#f8bbd9)}
+.scene-bg-earth{background:linear-gradient(135deg,#f3e5f5,#e1bee7)}
+.scene-bg-neuro{background:linear-gradient(135deg,#e8eaf6,#c5cae9)}
+.scene-bg-gen{background:linear-gradient(135deg,#e0f7fa,#b2ebf2)}
+.scene-bg-spec{background:linear-gradient(135deg,#f9fbe7,#f0f4c3)}
+.scene-bg-ecg{background:linear-gradient(135deg,#fbe9e7,#ffccbc)}
+.scene-bg-photo{background:linear-gradient(135deg,#e8f5e9,#dcedc8)}
+.scene-bg-radio{background:linear-gradient(135deg,#fafafa,#eceff1)}
+.scene-bg-enz{background:linear-gradient(135deg,#ede7f6,#d1c4e9)}
+</style>
+
 <script>
-// Capability tabs
+// ═══════════ LAB DATA ═══════════
+const LABS = [
+  // 0 — DNA Extraction & PCR
+  {
+    title:'DNA Extraction & PCR', icon:'🧬', tag:'Biology', level:'Intermediate',
+    duration:'45 min', objectives:'Extract genomic DNA from a sample and amplify a target sequence using PCR.',
+    sceneClass:'scene-bg-bio',
+    theory:`<h3 style="font-family:'Nunito';font-weight:900;margin-bottom:12px">DNA Extraction & PCR — Theory</h3>
+<p style="font-size:.9rem;line-height:1.72;color:#55557a;margin-bottom:14px"><strong>DNA extraction</strong> isolates genetic material from cells by breaking open the cell membrane (lysis), removing proteins, and precipitating DNA using cold ethanol.</p>
+<p style="font-size:.9rem;line-height:1.72;color:#55557a;margin-bottom:14px"><strong>PCR (Polymerase Chain Reaction)</strong> amplifies a specific DNA region through repeated heating and cooling cycles:<br>• <strong>Denaturation (94–98°C):</strong> Strands separate<br>• <strong>Annealing (50–65°C):</strong> Primers bind<br>• <strong>Extension (72°C):</strong> Taq polymerase synthesises new strand</p>
+<p style="font-size:.9rem;line-height:1.72;color:#55557a">After ~30 cycles, a single target sequence is amplified into billions of copies, detectable by gel electrophoresis.</p>`,
+    steps:[
+      {title:'Cell Lysis', desc:'Add lysis buffer to your sample tube. Gently mix to break open the cell membranes and release DNA.', scene:'🧬', widget:'lysis'},
+      {title:'DNA Precipitation', desc:'Add ice-cold ethanol to the lysate. Watch as DNA precipitates out of solution as white fibrous strands.', scene:'🧪', quiz:{q:'Why is cold ethanol used to precipitate DNA?',opts:['It dissolves the DNA faster','It reduces DNA solubility causing it to precipitate','It denatures the proteins','It increases pH'],ans:1,exp:'Cold ethanol reduces DNA solubility. DNA is insoluble in cold ethanol but soluble in the aqueous buffer, causing it to crash out of solution.'}},
+      {title:'PCR Setup', desc:'Load your extracted DNA template, primers, Taq polymerase, and dNTPs into the PCR tube. Set your thermocycler.', scene:'⚗️', widget:'pcr_setup'},
+      {title:'Thermocycling', desc:'Run 30 PCR cycles. Each cycle: Denature at 95°C → Anneal at 58°C → Extend at 72°C.', scene:'🌡️', widget:'thermocycle'},
+      {title:'Gel Electrophoresis', desc:'Load your PCR product onto an agarose gel. Apply current and observe band migration by size.', scene:'💡', quiz:{q:'In gel electrophoresis, smaller DNA fragments migrate:',opts:['Slower, toward the negative pole','Faster, toward the positive pole','At the same speed regardless of size','They do not migrate'],ans:1,exp:'Smaller DNA fragments experience less resistance in the gel matrix and migrate faster toward the positive electrode (anode).'}},
+      {title:'Result Analysis', desc:'Compare your band position against the DNA ladder. Your target band confirms successful amplification!', scene:'🏆', widget:'result'}
+    ]
+  },
+  // 1 — Acid-Base Titration
+  {
+    title:'Acid-Base Titration', icon:'⚗️', tag:'Chemistry', level:'Beginner',
+    duration:'30 min', objectives:'Determine the unknown concentration of HCl by titrating against standardised NaOH solution.',
+    sceneClass:'scene-bg-chem',
+    theory:`<h3 style="font-family:'Nunito';font-weight:900;margin-bottom:12px">Acid-Base Titration — Theory</h3>
+<p style="font-size:.9rem;line-height:1.72;color:#55557a;margin-bottom:14px">Titration is a quantitative analytical technique used to determine the concentration of an unknown solution by reacting it with a solution of known concentration (the standard).</p>
+<p style="font-size:.9rem;line-height:1.72;color:#55557a;margin-bottom:14px"><strong>Key equation:</strong><br>HCl + NaOH → NaCl + H₂O<br><br>At the equivalence point: moles of acid = moles of base<br>n(HCl) = n(NaOH) → C₁V₁ = C₂V₂</p>
+<p style="font-size:.9rem;line-height:1.72;color:#55557a"><strong>Phenolphthalein indicator</strong> turns pink at pH ~8.2, signalling the endpoint. The sharp colour change marks the completion of neutralisation.</p>`,
+    steps:[
+      {title:'Prepare the Burette', desc:'Fill the burette with standardised 0.1 M NaOH solution. Record the initial volume reading carefully.', scene:'⚗️', widget:'burette_setup'},
+      {title:'Prepare the Flask', desc:'Pipette exactly 25.0 mL of the unknown HCl into an Erlenmeyer flask. Add 3 drops of phenolphthalein indicator.', scene:'🧪', quiz:{q:'Why do we add phenolphthalein indicator?',opts:['To colour the solution for visibility','To signal the endpoint when acid is neutralised','To speed up the reaction','To prevent evaporation'],ans:1,exp:'Phenolphthalein is colourless in acidic conditions and turns pink/magenta in slightly alkaline conditions (~pH 8.2), marking the equivalence point.'}},
+      {title:'Titration', desc:'Slowly add NaOH from the burette, swirling continuously. Watch the pink colour flash and fade as you approach the endpoint.', scene:'🌸', widget:'titrate'},
+      {title:'Endpoint Detection', desc:'The endpoint is reached when a single drop of NaOH turns the solution permanently pink for 30 seconds. Record your final volume.', scene:'🎯', quiz:{q:'At the equivalence point of HCl + NaOH titration, the pH is:',opts:['7.0 exactly','Below 7 (acidic)','Above 7 (basic)','Depends on concentrations'],ans:0,exp:'For a strong acid–strong base titration, the product (NaCl) is a neutral salt and water. The equivalence point pH = 7.0 exactly.'}},
+      {title:'Calculate Concentration', desc:'Use C₁V₁ = C₂V₂ to calculate the unknown HCl concentration from your titration data.', scene:'🔢', widget:'calculate'},
+      {title:'Report Results', desc:'Your calculated HCl concentration is 0.095 M ± 0.002 M. Compare against the true value and calculate % error.', scene:'🏆', widget:'result'}
+    ]
+  },
+  // 2 — Snell's Law
+  {
+    title:"Snell's Law & Optics", icon:'🔭', tag:'Physics', level:'Beginner',
+    duration:'25 min', objectives:"Verify Snell's Law by measuring angles of incidence and refraction across different optical media.",
+    sceneClass:'scene-bg-phy',
+    theory:`<h3 style="font-family:'Nunito';font-weight:900;margin-bottom:12px">Snell's Law — Theory</h3>
+<p style="font-size:.9rem;line-height:1.72;color:#55557a;margin-bottom:14px">When light passes from one medium to another, it changes speed and therefore bends — a phenomenon called <strong>refraction</strong>.</p>
+<p style="font-size:.9rem;line-height:1.72;color:#55557a;margin-bottom:14px"><strong>Snell's Law:</strong> n₁ sin θ₁ = n₂ sin θ₂<br><br>Where n is the refractive index and θ is the angle measured from the normal.</p>
+<p style="font-size:.9rem;line-height:1.72;color:#55557a"><strong>Total Internal Reflection</strong> occurs when light travels from a denser to a less dense medium at an angle exceeding the critical angle. This is the principle behind fibre optics.</p>`,
+    steps:[
+      {title:'Set Up the Optical Bench', desc:'Place the semicircular glass block on the ray table. Align the flat face with the normal line. Direct the laser at 0°.', scene:'🔭', widget:'optics_setup'},
+      {title:'Measure Refraction', desc:'Rotate the incident ray to 30°. Observe the refracted ray inside the glass. Measure the refraction angle.', scene:'💡', widget:'refract', quiz:{q:"Snell's Law states: n₁sinθ₁ = n₂sinθ₂. If n_glass = 1.5 and θ_incident = 30°, what is θ_refracted (in air, n=1)?",opts:['19.5°','48.6°','30.0°','15.0°'],ans:1,exp:'n_glass × sin(30°) = n_air × sin(θ). 1.5 × 0.5 = 1 × sin(θ). sin(θ) = 0.75, θ ≈ 48.6°.'}},
+      {title:'Find Critical Angle', desc:'Increase the angle from inside the glass. Find the angle where the refracted ray disappears — the critical angle for total internal reflection.', scene:'✨', widget:'critical'},
+      {title:'Fibre Optics Demo', desc:'See how total internal reflection traps light inside a fibre optic cable, allowing signals to travel around corners with no loss.', scene:'🌈', quiz:{q:'Total internal reflection occurs when light travels from:',opts:['Less dense to more dense medium at any angle','More dense to less dense medium beyond critical angle','Less dense to more dense medium beyond critical angle','Any medium to any medium'],ans:1,exp:'TIR only occurs when light travels from a more optically dense medium (higher n) to a less dense one, AND the angle of incidence exceeds the critical angle.'}},
+      {title:'Plot n vs angle', desc:'Plot your sinθᵢ vs sinθᵣ data. The slope of the line gives the refractive index of the glass sample.', scene:'📊', widget:'plot'},
+      {title:'Conclusion', desc:'Your measured refractive index: n = 1.48 ± 0.02. Accepted value: 1.50. % error = 1.3%. Excellent precision!', scene:'🏆', widget:'result'}
+    ]
+  },
+  // 3 — Blood Typing
+  {
+    title:'Blood Typing & Transfusion', icon:'🏥', tag:'Health Sciences', level:'Advanced',
+    duration:'40 min', objectives:'Determine ABO and Rh blood groups using agglutination tests and select compatible blood for transfusion.',
+    sceneClass:'scene-bg-med',
+    theory:`<h3 style="font-family:'Nunito';font-weight:900;margin-bottom:12px">Blood Typing — Theory</h3>
+<p style="font-size:.9rem;line-height:1.72;color:#55557a;margin-bottom:14px">The <strong>ABO system</strong> classifies blood by antigens on red blood cells (A, B, both, or neither) and corresponding antibodies in plasma.</p>
+<p style="font-size:.9rem;line-height:1.72;color:#55557a;margin-bottom:14px"><strong>Agglutination</strong> (clumping) occurs when antibodies bind their matching antigens — a positive test result.</p>
+<p style="font-size:.9rem;line-height:1.72;color:#55557a">The <strong>Rh factor</strong> (D antigen) further classifies blood as positive (+) or negative (−). Rh-negative patients should only receive Rh-negative blood to avoid sensitisation.</p>`,
+    steps:[
+      {title:'Collect Patient Sample', desc:"Add a drop of the patient's blood to three wells: Anti-A serum, Anti-B serum, and Anti-D (Rh) serum.", scene:'🩸', widget:'blood_collect'},
+      {title:'Add Antisera', desc:'Add Anti-A antibody to well 1, Anti-B to well 2, and Anti-D to well 3. Mix gently with separate sticks.', scene:'💉', quiz:{q:'What does agglutination (clumping) in the Anti-A well indicate?',opts:['Blood type B','Blood type A is present','No antigens present','Patient has antibodies against A'],ans:1,exp:'Clumping in Anti-A serum indicates the presence of A antigens on the red blood cells, meaning the patient has blood type A or AB.'}},
+      {title:'Read Results', desc:'Observe each well. Clumping = positive reaction. Our patient shows: Anti-A ✓ clumps, Anti-B ✗ no clump, Anti-D ✓ clumps.', scene:'🔬', widget:'read_blood'},
+      {title:'Determine Blood Type', desc:'Anti-A positive + Anti-B negative = Type A. Anti-D positive = Rh+. Patient blood type: A+', scene:'🏷️', quiz:{q:'Which blood types can safely receive Type A+ blood?',opts:['Only A+','A+ and AB+','A+, A−, AB+ and AB−','All blood types'],ans:1,exp:'A+ blood contains A antigens and Rh factor. It can only be given to recipients who have A or AB type (to avoid ABO reaction) AND are Rh+ (to avoid Rh sensitisation). So A+ and AB+ only.'}},
+      {title:'Select Compatible Donor', desc:'Browse the blood bank inventory. Select the safest compatible unit for an emergency transfusion to our A+ patient.', scene:'🏦', widget:'blood_bank'},
+      {title:'Transfusion Complete', desc:'Compatible A+ blood selected and transfused safely. Patient vitals stable. Excellent clinical decision-making!', scene:'✅', widget:'result'}
+    ]
+  },
+  // 4 — Ecosystem Dynamics
+  {
+    title:'Ecosystem Dynamics', icon:'🌍', tag:'Earth Science', level:'Beginner',
+    duration:'35 min', objectives:'Model predator-prey population dynamics and simulate the effect of climate change on ecosystem balance.',
+    sceneClass:'scene-bg-earth',
+    theory:`<h3 style="font-family:'Nunito';font-weight:900;margin-bottom:12px">Ecosystem Dynamics — Theory</h3>
+<p style="font-size:.9rem;line-height:1.72;color:#55557a;margin-bottom:14px">Ecosystems are complex networks of organisms interacting with each other and their environment. <strong>Predator-prey relationships</strong> drive oscillating population cycles described by the Lotka-Volterra equations.</p>
+<p style="font-size:.9rem;line-height:1.72;color:#55557a;margin-bottom:14px">When prey populations grow, predator populations follow — then prey decline as predation increases, causing predators to decline in turn. This creates repeating cycles.</p>
+<p style="font-size:.9rem;line-height:1.72;color:#55557a">Climate change disrupts these cycles by altering habitats, shifting seasonal timing, and changing resource availability — leading to biodiversity loss and ecosystem collapse.</p>`,
+    steps:[
+      {title:'Set Initial Populations', desc:'Set your starting populations: Rabbits = 500, Foxes = 50. These represent a balanced grassland ecosystem.', scene:'🌍', widget:'eco_setup'},
+      {title:'Observe Natural Cycle', desc:'Run the simulation for 10 years. Watch the classic predator-prey oscillation develop between rabbit and fox populations.', scene:'📈', quiz:{q:'If rabbit population suddenly increases due to a mild winter, what happens next?',opts:['Fox population decreases immediately','Fox population increases as food is abundant','Rabbit population stays high permanently','Nothing changes'],ans:1,exp:'More prey (rabbits) means more food for predators (foxes). Fox populations grow in response to abundant prey, which will eventually reduce rabbit numbers again — the classic Lotka-Volterra cycle.'}},
+      {title:'Introduce Climate Stress', desc:'Increase temperature by +2°C. Observe how reduced vegetation affects the rabbit carrying capacity and cascades through the food chain.', scene:'🌡️', widget:'climate'},
+      {title:'Species Extinction Risk', desc:'At +3°C warming, rabbit populations crash below the minimum viable population. What happens to foxes?', scene:'⚠️', quiz:{q:'What is a "trophic cascade"?',opts:['Direct effect of temperature on one species','Indirect effects that ripple through the food chain when one species changes','A waterfall in a tropical ecosystem','An increase in biodiversity'],ans:1,exp:'A trophic cascade is when a change in one species (often a top predator or key prey) triggers indirect effects throughout multiple levels of the food chain — like how wolf reintroduction in Yellowstone changed river flow!'}},
+      {title:'Conservation Intervention', desc:'Apply a conservation strategy: introduce a protected reserve zone. See how habitat protection stabilises the ecosystem under climate pressure.', scene:'🌳', widget:'conserve'},
+      {title:'Ecosystem Report', desc:'Your intervention reduced extinction risk by 67%. Protected reserves are proven to increase ecosystem resilience under climate change.', scene:'🏆', widget:'result'}
+    ]
+  },
+  // 5 — Action Potential
+  {
+    title:'Action Potential Simulation', icon:'🧠', tag:'Neuroscience', level:'Advanced',
+    duration:'40 min', objectives:'Visualise the ionic mechanisms behind nerve impulse generation and propagation along a neuron.',
+    sceneClass:'scene-bg-neuro',
+    theory:`<h3 style="font-family:'Nunito';font-weight:900;margin-bottom:12px">Action Potential — Theory</h3>
+<p style="font-size:.9rem;line-height:1.72;color:#55557a;margin-bottom:14px">A neuron at rest has a membrane potential of <strong>−70 mV</strong> (resting potential), maintained by the Na⁺/K⁺-ATPase pump moving 3 Na⁺ out for every 2 K⁺ in.</p>
+<p style="font-size:.9rem;line-height:1.72;color:#55557a;margin-bottom:14px">When a stimulus exceeds the <strong>threshold (−55 mV)</strong>, voltage-gated Na⁺ channels open → rapid depolarisation to +40 mV. Then Na⁺ channels inactivate, K⁺ channels open → repolarisation → hyperpolarisation → return to rest.</p>
+<p style="font-size:.9rem;line-height:1.72;color:#55557a">The action potential propagates along the axon as each depolarised region triggers the next — faster in myelinated axons (saltatory conduction).</p>`,
+    steps:[
+      {title:'Resting Membrane Potential', desc:'Observe the neuron at rest: −70 mV. Na⁺/K⁺ pumps maintain the electrochemical gradient. Ion channels are closed.', scene:'🧠', widget:'neuron_rest'},
+      {title:'Apply Stimulus', desc:'Apply an electrical stimulus. Slowly increase the stimulus strength until you reach the threshold potential of −55 mV.', scene:'⚡', widget:'stimulus', quiz:{q:'What is the "all-or-nothing" principle of action potentials?',opts:['Action potentials vary in size with stimulus strength','Once threshold is reached, the full action potential fires regardless of stimulus size','Neurons only respond to large stimuli','Action potentials can only travel in one direction'],ans:1,exp:'Action potentials are "all-or-nothing" — once the threshold is reached, a full action potential fires. A stronger stimulus does NOT produce a larger action potential, only a higher frequency of firing.'}},
+      {title:'Depolarisation Phase', desc:'Voltage-gated Na⁺ channels snap open. Na⁺ floods in — membrane potential races from −55 mV to +40 mV in under 1 ms.', scene:'⬆️', widget:'depol'},
+      {title:'Repolarisation & Hyperpolarisation', desc:'Na⁺ channels inactivate. K⁺ channels open — K⁺ rushes out. Membrane overshoots to −80 mV (hyperpolarisation) before recovering.', scene:'⬇️', quiz:{q:'During the refractory period, the neuron:',opts:['Can fire again immediately','Cannot fire (absolute) or needs stronger stimulus (relative)','Fires continuously','Releases neurotransmitters'],ans:1,exp:'The absolute refractory period (Na⁺ channels inactivated) = no firing possible. The relative refractory period (recovery phase) = firing requires a stronger-than-normal stimulus.'}},
+      {title:'Saltatory Conduction', desc:'In myelinated axons, the action potential jumps between Nodes of Ranvier — up to 10× faster than unmyelinated conduction.', scene:'🏃', widget:'myelin'},
+      {title:'Neurotransmitter Release', desc:'The action potential reaches the axon terminal, triggering Ca²⁺ influx and vesicle fusion — neurotransmitters released into the synapse!', scene:'🏆', widget:'result'}
+    ]
+  },
+  // 6 — Mendelian Genetics
+  {
+    title:'Mendelian Genetics', icon:'🧫', tag:'Genetics', level:'Beginner',
+    duration:'30 min', objectives:'Perform monohybrid and dihybrid crosses, predict phenotype ratios, and interpret a pedigree chart.',
+    sceneClass:'scene-bg-gen',
+    theory:`<h3 style="font-family:'Nunito';font-weight:900;margin-bottom:12px">Mendelian Genetics — Theory</h3>
+<p style="font-size:.9rem;line-height:1.72;color:#55557a;margin-bottom:14px">Gregor Mendel's laws describe how traits are inherited:<br><strong>Law of Segregation:</strong> Each organism carries two alleles per gene; these separate during gamete formation.<br><strong>Law of Independent Assortment:</strong> Alleles of different genes assort independently.</p>
+<p style="font-size:.9rem;line-height:1.72;color:#55557a;margin-bottom:14px">A <strong>Punnett square</strong> predicts the probability of offspring genotypes and phenotypes from a cross between two parents.</p>
+<p style="font-size:.9rem;line-height:1.72;color:#55557a">Dominant alleles (B) mask recessive alleles (b). Only bb genotype expresses the recessive phenotype.</p>`,
+    steps:[
+      {title:'Choose Parent Genotypes', desc:'Cross a homozygous dominant tall plant (TT) with a homozygous recessive short plant (tt). Set up your Punnett square.', scene:'🌱', widget:'punnett1'},
+      {title:'F1 Generation', desc:'All F1 offspring are Tt (heterozygous) and phenotypically tall. The recessive trait is hidden but present.', scene:'🌿', quiz:{q:'In the F1 cross above (TT × tt), what is the phenotype ratio?',opts:['3 tall : 1 short','1 tall : 1 short','All tall','All short'],ans:2,exp:'All F1 offspring receive one T allele from the dominant parent and one t from the recessive parent — giving all Tt. Since T is dominant, all F1 plants are phenotypically TALL.'}},
+      {title:'F2 Cross (Tt × Tt)', desc:'Cross two F1 heterozygotes. Complete the Punnett square to predict F2 genotype and phenotype ratios.', scene:'🌻', widget:'punnett2'},
+      {title:'Dihybrid Cross', desc:'Now cross plants differing in two traits: seed colour (Y/y) and seed shape (R/r). Predict the 9:3:3:1 ratio!', scene:'🫘', quiz:{q:'In a dihybrid cross (YyRr × YyRr), what fraction of offspring are double recessive (yyrr)?',opts:['1/4','1/8','1/16','1/2'],ans:2,exp:'Each trait independently gives a 1/4 chance of homozygous recessive. Combined probability = 1/4 × 1/4 = 1/16. This is the basis of the 9:3:3:1 phenotype ratio.'}},
+      {title:'Interpret a Pedigree', desc:'Analyse a family pedigree for a recessive condition. Determine carrier status and calculate risk for the next generation.', scene:'👨‍👩‍👧', widget:'pedigree'},
+      {title:'Genetics Summary', desc:'Excellent! You predicted a 3:1 ratio (F2 monohybrid), 9:3:3:1 (dihybrid), and identified carriers in a pedigree. Core Mendelian genetics mastered!', scene:'🏆', widget:'result'}
+    ]
+  },
+  // 7 — Flame Test
+  {
+    title:'Flame Test & Spectroscopy', icon:'🔥', tag:'Chemistry', level:'Beginner',
+    duration:'25 min', objectives:'Identify unknown metal ions by their characteristic flame colours and match emission spectra.',
+    sceneClass:'scene-bg-spec',
+    theory:`<h3 style="font-family:'Nunito';font-weight:900;margin-bottom:12px">Flame Test & Spectroscopy — Theory</h3>
+<p style="font-size:.9rem;line-height:1.72;color:#55557a;margin-bottom:14px">When metal ions are heated in a flame, electrons absorb energy and jump to higher energy levels. When they fall back, they <strong>emit light at characteristic wavelengths</strong> — producing unique colours.</p>
+<p style="font-size:.9rem;line-height:1.72;color:#55557a;margin-bottom:14px">Common colours: Li = crimson red, Na = bright yellow, K = lilac, Ca = brick red, Cu = blue-green, Ba = pale green.</p>
+<p style="font-size:.9rem;line-height:1.72;color:#55557a">A <strong>spectroscope</strong> separates this light into individual emission lines — a unique "fingerprint" spectrum for each element used in analytical chemistry and astronomy.</p>`,
+    steps:[
+      {title:'Prepare the Nichrome Wire', desc:'Clean your nichrome wire loop by dipping in HCl and holding in the Bunsen flame until no colour appears. This prevents contamination.', scene:'🔥', quiz:{q:'Why must the nichrome wire be cleaned before each test?',opts:['To sterilise it from bacteria','To remove previous metal ion residues that would contaminate the result','To make it more conductive','To increase flame temperature'],ans:1,exp:'Any trace of a previous metal ion on the wire will produce its own colour in the flame, contaminating and masking the colour from the new sample.'}},
+      {title:'Lithium Flame Test', desc:'Dip the clean wire into the lithium chloride solution and hold it in the hottest part of the Bunsen flame. Observe the colour.', scene:'🔴', widget:'flame_li'},
+      {title:'Sodium Flame Test', desc:'Test sodium chloride solution. Even tiny amounts of sodium produce an intense, persistent yellow flame that dominates all others.', scene:'🟡', quiz:{q:'Sodium produces such an intense yellow flame because:',opts:['It has a very high melting point','Its 3s→2p electron transition emits strongly at 589 nm (yellow)','It burns hotter than other metals','It reacts violently with oxygen'],ans:1,exp:'The sodium D-line emission at 589 nm (yellow) is exceptionally bright. The 3s electron is easily excited and the transition back produces intense yellow light — so intense it can mask other colours in a mixture.'}},
+      {title:'Unknown Sample Identification', desc:"You have an unknown metal salt. Perform the flame test — the flame burns blue-green. Match it to your reference chart.", scene:'🔵', widget:'unknown_flame'},
+      {title:'Spectroscope Analysis', desc:'View the emission spectrum of each element through the spectroscope. Match the unique line pattern to identify the unknown with certainty.', scene:'🌈', widget:'spectrum'},
+      {title:'Lab Complete', desc:'You correctly identified the unknown as Copper (Cu²⁺) — blue-green flame, confirmed by spectral lines at 515 nm and 522 nm. Well done!', scene:'🏆', widget:'result'}
+    ]
+  },
+  // 8 — ECG
+  {
+    title:'ECG & Heart Rhythms', icon:'🩺', tag:'Health Sciences', level:'Advanced',
+    duration:'45 min', objectives:'Interpret ECG traces to identify normal sinus rhythm, bradycardia, tachycardia, and atrial fibrillation.',
+    sceneClass:'scene-bg-ecg',
+    theory:`<h3 style="font-family:'Nunito';font-weight:900;margin-bottom:12px">ECG & Heart Rhythms — Theory</h3>
+<p style="font-size:.9rem;line-height:1.72;color:#55557a;margin-bottom:14px">An ECG (electrocardiogram) records the electrical activity of the heart over time. Each heartbeat produces a characteristic waveform: <strong>P wave</strong> (atrial depolarisation) → <strong>QRS complex</strong> (ventricular depolarisation) → <strong>T wave</strong> (ventricular repolarisation).</p>
+<p style="font-size:.9rem;line-height:1.72;color:#55557a;margin-bottom:14px">Normal heart rate = 60–100 bpm. PR interval = 0.12–0.20 s. QRS duration = &lt;0.12 s.</p>
+<p style="font-size:.9rem;line-height:1.72;color:#55557a">Abnormalities in waveform shape, interval duration, or rate indicate arrhythmias — from benign bradycardia to life-threatening ventricular fibrillation.</p>`,
+    steps:[
+      {title:'ECG Lead Placement', desc:'Attach the 10 ECG electrodes to the correct anatomical positions: 4 limb leads (RA, LA, RL, LL) and 6 precordial leads (V1–V6).', scene:'🩺', quiz:{q:'What does the P wave on an ECG represent?',opts:['Ventricular contraction','Atrial depolarisation spreading from the SA node','Ventricular repolarisation','Electrical reset of the AV node'],ans:1,exp:'The P wave represents the electrical impulse spreading from the SA node across both atria, causing atrial depolarisation and contraction. It precedes ventricular activity.'}},
+      {title:'Normal Sinus Rhythm', desc:'Analyse this ECG trace: regular rhythm, rate 72 bpm, P before every QRS, PR interval 0.16s, QRS 0.08s. This is normal sinus rhythm.', scene:'💓', widget:'ecg_normal'},
+      {title:'Identify Bradycardia', desc:'This patient has a heart rate of 42 bpm. P waves present, rhythm regular. Identify and classify this arrhythmia.', scene:'⬇️', quiz:{q:'Bradycardia is defined as a heart rate:',opts:['Below 60 bpm','Below 100 bpm','Above 100 bpm','Above 60 bpm'],ans:0,exp:'Bradycardia is defined as a resting heart rate below 60 beats per minute. It may be normal in athletes but can cause symptoms like dizziness or syncope in others.'}},
+      {title:'Identify Tachycardia', desc:'New patient, rate 138 bpm, narrow QRS, regular rhythm. P waves visible before each QRS. Classify this rhythm.', scene:'⬆️', widget:'ecg_tachy'},
+      {title:'Atrial Fibrillation', desc:'Irregular rhythm, no distinct P waves — replaced by fibrillatory baseline. Irregularly irregular QRS. This is atrial fibrillation.', scene:'〰️', quiz:{q:'In atrial fibrillation, why are P waves absent?',opts:['The SA node fires too fast to be detected','Multiple chaotic re-entry circuits in the atria replace organised SA node activity','The AV node is blocked','Electrodes are placed incorrectly'],ans:1,exp:'In AF, multiple chaotic electrical wavelets circulate through the atria simultaneously. This disorganised activity replaces the single organised P wave from the SA node with an irregular fibrillatory baseline.'}},
+      {title:'Clinical Report', desc:'You correctly identified all 4 rhythms: Normal sinus, Bradycardia, SVT, and Atrial Fibrillation. Score: 4/4. Outstanding ECG interpretation!', scene:'🏆', widget:'result'}
+    ]
+  },
+  // 9 — Photosynthesis
+  {
+    title:'Photosynthesis & Respiration', icon:'🌱', tag:'Biology', level:'Intermediate',
+    duration:'35 min', objectives:'Investigate the light-dependent and Calvin cycle reactions and measure the effect of light intensity on photosynthesis rate.',
+    sceneClass:'scene-bg-photo',
+    theory:`<h3 style="font-family:'Nunito';font-weight:900;margin-bottom:12px">Photosynthesis & Respiration — Theory</h3>
+<p style="font-size:.9rem;line-height:1.72;color:#55557a;margin-bottom:14px"><strong>Photosynthesis:</strong> 6CO₂ + 6H₂O + light energy → C₆H₁₂O₆ + 6O₂<br>Occurs in two stages:<br>• <strong>Light reactions</strong> (thylakoid membranes): Split water, produce ATP and NADPH, release O₂<br>• <strong>Calvin cycle</strong> (stroma): Uses ATP/NADPH to fix CO₂ into glucose</p>
+<p style="font-size:.9rem;line-height:1.72;color:#55557a"><strong>Cellular respiration</strong> (mitochondria): C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + ATP — releases the energy stored in glucose through glycolysis, Krebs cycle, and electron transport chain.</p>`,
+    steps:[
+      {title:'Chloroplast Structure', desc:'Examine the chloroplast: double outer membrane, thylakoid discs stacked into grana, and the fluid-filled stroma surrounding them.', scene:'🌿', quiz:{q:'Where does the Calvin cycle (carbon fixation) take place?',opts:['Thylakoid membrane','Stroma of the chloroplast','Mitochondrial matrix','Cytoplasm'],ans:1,exp:'The Calvin cycle (light-independent reactions) occurs in the stroma — the fluid-filled space surrounding the thylakoids. The light reactions occur on the thylakoid membranes.'}},
+      {title:'Light Reactions', desc:'In the thylakoids, photosystems I and II absorb light. Water is split (photolysis), O₂ is released, and ATP + NADPH are produced.', scene:'☀️', widget:'light_rxn'},
+      {title:'Calvin Cycle', desc:'ATP and NADPH from light reactions power CO₂ fixation by RuBisCO enzyme, producing G3P which is used to build glucose.', scene:'🔄', quiz:{q:'How many turns of the Calvin cycle are needed to produce ONE glucose molecule?',opts:['2 turns','3 turns','6 turns','12 turns'],ans:2,exp:'Each turn of the Calvin cycle fixes ONE CO₂. Glucose (C₆H₁₂O₆) has 6 carbons, so 6 turns are needed to fix enough carbon to make one glucose molecule.'}},
+      {title:'Measure Photosynthesis Rate', desc:'Vary light intensity (25%, 50%, 75%, 100%) and measure O₂ production rate. Plot your results to find the light saturation point.', scene:'📊', widget:'photo_rate'},
+      {title:'Compare Respiration', desc:'In darkness, plants only respire. Measure CO₂ production. At the light compensation point, photosynthesis = respiration (net gas exchange = 0).', scene:'🌙', widget:'resp_compare'},
+      {title:'Lab Summary', desc:'You demonstrated that photosynthesis rate increases with light intensity until the saturation point. Light compensation point measured at 18 µmol/m²/s. Excellent lab technique!', scene:'🏆', widget:'result'}
+    ]
+  },
+  // 10 — Radioactive Decay
+  {
+    title:'Radioactive Decay', icon:'⚛️', tag:'Physics', level:'Advanced',
+    duration:'40 min', objectives:'Simulate radioactive decay, measure half-life, and model decay chains using virtual Geiger-Müller counters.',
+    sceneClass:'scene-bg-radio',
+    theory:`<h3 style="font-family:'Nunito';font-weight:900;margin-bottom:12px">Radioactive Decay — Theory</h3>
+<p style="font-size:.9rem;line-height:1.72;color:#55557a;margin-bottom:14px">Unstable nuclei spontaneously emit radiation to reach a more stable configuration. Three main types:<br>• <strong>Alpha (α):</strong> ⁴He nucleus, low penetration, stopped by paper<br>• <strong>Beta (β):</strong> Electron/positron, stopped by aluminium<br>• <strong>Gamma (γ):</strong> High-energy photon, requires lead shielding</p>
+<p style="font-size:.9rem;line-height:1.72;color:#55557a;margin-bottom:14px"><strong>Half-life (t½):</strong> Time for half the nuclei to decay. N(t) = N₀ × (1/2)^(t/t½)</p>
+<p style="font-size:.9rem;line-height:1.72;color:#55557a">Radiocarbon dating uses ¹⁴C half-life (5,730 years) to date organic materials up to ~50,000 years old.</p>`,
+    steps:[
+      {title:'Radiation Safety Briefing', desc:'Before entering the virtual nuclear lab: put on dosimetry badge, lead apron, and gloves. Check the Geiger counter background reading.', scene:'⚛️', quiz:{q:'Which type of radiation has the greatest penetrating power?',opts:['Alpha particles','Beta particles','Gamma rays','All penetrate equally'],ans:2,exp:'Gamma rays are high-energy electromagnetic radiation with the greatest penetrating power — requiring lead or thick concrete for effective shielding. Alpha particles are stopped by a sheet of paper, beta by a few mm of aluminium.'}},
+      {title:'Geiger Counter', desc:'Use the Geiger-Müller tube to measure the count rate from our radioactive sample. Current reading: 840 counts per minute (cpm).', scene:'📡', widget:'geiger'},
+      {title:'Measure Half-Life', desc:'Record count rates every 2 minutes for 20 minutes. Plot ln(count rate) vs time — the slope gives the decay constant λ.', scene:'📉', widget:'halflife'},
+      {title:'Decay Chain', desc:"Some nuclei don't decay directly to stable isotopes. Uranium-238 undergoes 14 decay steps before reaching stable Pb-206. Trace the chain.", scene:'🔗', quiz:{q:'Carbon-14 has a half-life of 5,730 years. After 3 half-lives, what fraction of the original C-14 remains?',opts:['1/2','1/4','1/8','1/16'],ans:2,exp:'After each half-life, half remains. After 1 t½: 1/2. After 2 t½: 1/4. After 3 t½: 1/8. After n half-lives: (1/2)ⁿ of the original remains.'}},
+      {title:'Radiocarbon Dating', desc:"A wood sample shows 25% of its original C-14 remaining. How old is the sample? Use t = t½ × log₂(N₀/N).", scene:'🪵', widget:'carbon_date'},
+      {title:'Lab Complete', desc:'You measured a half-life of 12.4 minutes (accepted: 12.3 min). Excellent precision! Radiocarbon dating calculation: 11,460 years. All objectives achieved!', scene:'🏆', widget:'result'}
+    ]
+  },
+  // 11 — Enzyme Kinetics
+  {
+    title:'Enzyme Kinetics', icon:'🧪', tag:'Biochemistry', level:'Advanced',
+    duration:'45 min', objectives:'Determine Vmax and Km for an enzyme using the Michaelis-Menten model and test the effect of inhibitors.',
+    sceneClass:'scene-bg-enz',
+    theory:`<h3 style="font-family:'Nunito';font-weight:900;margin-bottom:12px">Enzyme Kinetics — Theory</h3>
+<p style="font-size:.9rem;line-height:1.72;color:#55557a;margin-bottom:14px">The <strong>Michaelis-Menten model</strong> describes the relationship between substrate concentration [S] and reaction rate (v):<br><br>v = Vmax × [S] / (Km + [S])</p>
+<p style="font-size:.9rem;line-height:1.72;color:#55557a;margin-bottom:14px"><strong>Km</strong> (Michaelis constant) = [S] at which v = ½ Vmax — a measure of enzyme-substrate affinity. Lower Km = higher affinity.<br><strong>Vmax</strong> = maximum reaction rate when all enzyme active sites are saturated.</p>
+<p style="font-size:.9rem;line-height:1.72;color:#55557a">Inhibitors reduce enzyme activity: <strong>Competitive</strong> inhibitors increase apparent Km; <strong>Non-competitive</strong> inhibitors decrease apparent Vmax.</p>`,
+    steps:[
+      {title:'Prepare Enzyme Assay', desc:'Set up 6 cuvettes with increasing substrate concentrations: 0.5, 1, 2, 4, 8, 16 mM. Add equal enzyme (amylase) to each. Measure initial reaction rates.', scene:'🧪', widget:'assay_setup'},
+      {title:'Measure Reaction Rates', desc:'Using the spectrophotometer at 540 nm, measure absorbance change per minute. Higher substrate = faster colour change = higher rate.', scene:'💜', quiz:{q:'Why do we measure INITIAL reaction rates in enzyme kinetics?',opts:['Because the experiment is too long otherwise','To avoid the effects of product accumulation, substrate depletion, and enzyme inactivation','Initial rates are always higher','It is a safety requirement'],ans:1,exp:'Initial rates are measured before significant product accumulates (product inhibition), substrate depletes (changing [S]), or the enzyme becomes inactivated. This gives true kinetic parameters under controlled conditions.'}},
+      {title:'Plot Michaelis-Menten Curve', desc:'Plot reaction rate (v) vs [substrate]. The curve should show hyperbolic kinetics, plateauing at Vmax. Estimate Km from the graph.', scene:'📊', widget:'mm_curve'},
+      {title:'Lineweaver-Burk Plot', desc:'Linearise your data using the double-reciprocal (Lineweaver-Burk) plot: 1/v vs 1/[S]. Y-intercept = 1/Vmax, X-intercept = −1/Km.', scene:'📉', quiz:{q:'On a Lineweaver-Burk plot, where does competitive inhibitor data appear compared to the uninhibited enzyme?',opts:['Same x-intercept (same Km), different y-intercept','Different x-intercept (higher apparent Km), same y-intercept (same Vmax)','Same slope, different intercepts','Parallel lines with same x-intercept'],ans:1,exp:'Competitive inhibitors can be overcome by excess substrate — Vmax is unchanged. But apparent Km increases (lower affinity). On L-B plot: same y-intercept (1/Vmax), different x-intercept (−1/Km_app), lines cross on y-axis.'}},
+      {title:'Test Inhibitors', desc:'Add competitive inhibitor (maltose) to one set and non-competitive inhibitor to another. Re-run kinetics and plot the new Lineweaver-Burk lines.', scene:'🚫', widget:'inhibitor'},
+      {title:'Kinetics Report', desc:'Vmax = 8.2 μmol/min, Km = 3.1 mM (no inhibitor). Competitive inhibitor: Km_app = 6.8 mM, Vmax unchanged. All enzyme kinetics objectives achieved!', scene:'🏆', widget:'result'}
+    ]
+  }
+];
+
+// ═══════════ STATE ═══════════
+let currentLab = 0;
+let currentStep = 0;
+let labScores = {};
+let currentTab = 0;
+let quizAnswered = false;
+
+// ═══════════ OPEN / CLOSE ═══════════
+function openLab(idx) {
+  currentLab = idx;
+  currentStep = 0;
+  currentTab = 0;
+  quizAnswered = false;
+  if (!labScores[idx]) labScores[idx] = {correct:0, total:0};
+  const modal = document.getElementById('labModal');
+  modal.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+  renderLab();
+}
+function closeLab() {
+  document.getElementById('labModal').style.display = 'none';
+  document.body.style.overflow = '';
+}
+document.getElementById('labModal').addEventListener('click', function(e){
+  if(e.target === this) closeLab();
+});
+
+// ═══════════ RENDER ═══════════
+function renderLab() {
+  const lab = LABS[currentLab];
+  const step = lab.steps[currentStep];
+  const totalSteps = lab.steps.length;
+  // Header
+  document.getElementById('labIcon').textContent = lab.icon;
+  document.getElementById('labTitle').textContent = lab.title;
+  document.getElementById('labMeta').textContent = lab.tag + ' · ' + lab.level + ' · ⏱ ' + lab.duration;
+  document.getElementById('stepIndicator').textContent = 'Step ' + (currentStep+1) + ' of ' + totalSteps;
+  // Progress
+  document.getElementById('labProgress').style.width = ((currentStep+1)/totalSteps*100) + '%';
+  // Scene
+  const scene = document.getElementById('labScene');
+  scene.className = lab.sceneClass;
+  scene.style.cssText = 'min-height:220px;display:flex;align-items:center;justify-content:center;font-size:88px;position:relative;flex-shrink:0;';
+  scene.innerHTML = '<span style="animation:float2 3s ease-in-out infinite;display:inline-block">' + step.scene + '</span>';
+  // Step text
+  document.getElementById('stepTitle').textContent = step.title;
+  document.getElementById('stepDesc').textContent = step.desc;
+  // Dots
+  let dots = '';
+  for(let i=0;i<totalSteps;i++){
+    dots += '<div style="width:'+(i===currentStep?'22px':'8px')+';height:8px;border-radius:4px;background:'+(i<currentStep?'#e85d26':i===currentStep?'#e85d26':'#e8e0d8')+';transition:all .3s;"></div>';
+  }
+  document.getElementById('stepDots').innerHTML = dots;
+  // Prev/Next buttons
+  document.getElementById('btnPrev').disabled = currentStep === 0;
+  document.getElementById('btnPrev').style.opacity = currentStep === 0 ? '0.4' : '1';
+  document.getElementById('btnNext').textContent = currentStep === totalSteps-1 ? 'Finish Lab 🎉' : 'Continue →';
+  // Quiz
+  quizAnswered = false;
+  const qb = document.getElementById('quizBox');
+  const iz = document.getElementById('interactionZone');
+  iz.innerHTML = '';
+  document.getElementById('quizFeedback').style.display = 'none';
+  if(step.quiz) {
+    qb.style.display = 'block';
+    document.getElementById('quizQ').textContent = step.quiz.q;
+    let optsHtml = '';
+    step.quiz.opts.forEach((o,i) => {
+      optsHtml += '<button class="quiz-opt" onclick="answerQuiz('+i+')" id="qo'+i+'">'+String.fromCharCode(65+i)+'. '+o+'</button>';
+    });
+    document.getElementById('quizOpts').innerHTML = optsHtml;
+  } else {
+    qb.style.display = 'none';
+    renderWidget(step.widget, iz, lab);
+  }
+  // Theory tab
+  document.getElementById('tabTheory').innerHTML = lab.theory;
+  // Results tab
+  renderResults();
+  switchLabTab(0);
+}
+
+// ═══════════ QUIZ ═══════════
+function answerQuiz(chosen) {
+  if(quizAnswered) return;
+  quizAnswered = true;
+  const step = LABS[currentLab].steps[currentStep];
+  const correct = step.quiz.ans;
+  document.querySelectorAll('.quiz-opt').forEach((b,i) => {
+    b.disabled = true;
+    if(i === correct) b.classList.add('correct');
+    if(i === chosen && chosen !== correct) b.classList.add('wrong');
+  });
+  const fb = document.getElementById('quizFeedback');
+  fb.style.display = 'block';
+  if(chosen === correct) {
+    fb.style.background = '#f0fdf4'; fb.style.border = '1.5px solid #86efac'; fb.style.color = '#166534';
+    fb.innerHTML = '✅ Correct! ' + step.quiz.exp;
+    labScores[currentLab].correct++;
+  } else {
+    fb.style.background = '#fef2f2'; fb.style.border = '1.5px solid #fca5a5'; fb.style.color = '#991b1b';
+    fb.innerHTML = '❌ Not quite. ' + step.quiz.exp;
+  }
+  labScores[currentLab].total++;
+}
+
+// ═══════════ NAVIGATION ═══════════
+function nextStep() {
+  const lab = LABS[currentLab];
+  if(currentStep < lab.steps.length-1) {
+    currentStep++;
+    quizAnswered = false;
+    renderLab();
+    document.getElementById('tabSim').scrollTop = 0;
+  } else {
+    // Finished
+    showFinishScreen();
+  }
+}
+function prevStep() {
+  if(currentStep > 0) { currentStep--; quizAnswered=false; renderLab(); }
+}
+
+// ═══════════ FINISH ═══════════
+function showFinishScreen() {
+  const sc = labScores[currentLab];
+  const pct = sc.total > 0 ? Math.round(sc.correct/sc.total*100) : 100;
+  const grade = pct >= 90 ? 'Outstanding 🏆' : pct >= 75 ? 'Excellent ⭐' : pct >= 60 ? 'Good 👍' : 'Keep Practising 📚';
+  const scene = document.getElementById('labScene');
+  scene.innerHTML = '<span style="animation:pulse 1s ease-in-out infinite;display:inline-block">🏆</span>';
+  scene.style.background = 'linear-gradient(135deg,#fff2ec,#fdf4ee)';
+  document.getElementById('stepTitle').textContent = 'Lab Complete! ' + grade;
+  document.getElementById('stepDesc').textContent = 'You have completed all steps of this virtual lab. Review your results in the Results tab.';
+  document.getElementById('quizBox').style.display = 'none';
+  document.getElementById('interactionZone').innerHTML =
+    '<div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:16px">' +
+    '<div style="flex:1;min-width:120px;background:linear-gradient(135deg,#e85d26,#f7941d);border-radius:14px;padding:20px;text-align:center;color:#fff">' +
+    '<div style="font-size:2rem;font-weight:900">'+pct+'%</div><div style="font-size:.8rem;font-weight:700;opacity:.85">Quiz Score</div></div>' +
+    '<div style="flex:1;min-width:120px;background:linear-gradient(135deg,#2ecc71,#27ae60);border-radius:14px;padding:20px;text-align:center;color:#fff">' +
+    '<div style="font-size:2rem;font-weight:900">'+LABS[currentLab].steps.length+'</div><div style="font-size:.8rem;font-weight:700;opacity:.85">Steps Done</div></div>' +
+    '<div style="flex:1;min-width:120px;background:linear-gradient(135deg,#2563eb,#1d4ed8);border-radius:14px;padding:20px;text-align:center;color:#fff">' +
+    '<div style="font-size:2rem;font-weight:900">'+LABS[currentLab].duration+'</div><div style="font-size:.8rem;font-weight:700;opacity:.85">Duration</div></div>' +
+    '</div>' +
+    '<div style="margin-top:18px;display:flex;gap:10px">' +
+    '<button class="sim-btn-action" onclick="currentStep=0;quizAnswered=false;renderLab()">↺ Restart Lab</button>' +
+    '<button class="sim-btn-action" style="background:linear-gradient(135deg,#2563eb,#1d4ed8)" onclick="closeLab()">✕ Close</button>' +
+    '</div>';
+  document.getElementById('btnNext').style.display = 'none';
+  switchLabTab(3);
+}
+
+// ═══════════ RESULTS TAB ═══════════
+function renderResults() {
+  const sc = labScores[currentLab] || {correct:0,total:0};
+  const pct = sc.total > 0 ? Math.round(sc.correct/sc.total*100) : 0;
+  const lab = LABS[currentLab];
+  let stepsHtml = lab.steps.map((s,i) => {
+    const done = i < currentStep || (i === currentStep && currentStep === lab.steps.length-1);
+    return '<div style="display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid #e8e0d8">' +
+      '<div style="width:28px;height:28px;border-radius:50%;background:'+(done?'#e85d26':'#e8e0d8')+';color:'+(done?'#fff':'#9090aa')+';display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:900;flex-shrink:0">'+(done?'✓':(i+1))+'</div>' +
+      '<div style="font-size:.85rem;font-weight:700;color:'+(done?'#1a1234':'#9090aa')+'">'+(i<currentStep||i===currentStep?s.scene+' ':'')+s.title+'</div>' +
+      '</div>';
+  }).join('');
+  document.getElementById('tabResults').innerHTML =
+    '<div style="font-family:\'Nunito\',sans-serif;font-weight:900;font-size:1rem;color:#1a1234;margin-bottom:16px">📊 Your Progress</div>' +
+    '<div style="display:flex;gap:12px;margin-bottom:20px">' +
+    '<div style="flex:1;background:#fff2ec;border:1.5px solid #fde8dc;border-radius:12px;padding:16px;text-align:center">' +
+    '<div style="font-weight:900;font-size:1.8rem;color:#e85d26">'+Math.round((currentStep+1)/lab.steps.length*100)+'%</div>' +
+    '<div style="font-size:.75rem;font-weight:700;color:#9090aa">Completion</div></div>' +
+    '<div style="flex:1;background:#f0fdf4;border:1.5px solid #86efac;border-radius:12px;padding:16px;text-align:center">' +
+    '<div style="font-weight:900;font-size:1.8rem;color:#16a34a">'+pct+'%</div>' +
+    '<div style="font-size:.75rem;font-weight:700;color:#9090aa">Quiz Score</div></div>' +
+    '<div style="flex:1;background:#eff6ff;border:1.5px solid #bfdbfe;border-radius:12px;padding:16px;text-align:center">' +
+    '<div style="font-weight:900;font-size:1.8rem;color:#2563eb">'+sc.correct+'/'+sc.total+'</div>' +
+    '<div style="font-size:.75rem;font-weight:700;color:#9090aa">Questions</div></div>' +
+    '</div>' +
+    '<div style="font-weight:800;font-size:.85rem;color:#1a1234;margin-bottom:8px">Steps Progress</div>' +
+    stepsHtml;
+}
+
+// ═══════════ TAB SWITCHING ═══════════
+function switchLabTab(idx) {
+  currentTab = idx;
+  ['tabSim','tabTheory','tabNotes','tabResults'].forEach((id,i) => {
+    document.getElementById(id).style.display = i===idx ? 'flex' : 'none';
+    if(i!==0) document.getElementById(['tabSim','tabTheory','tabNotes','tabResults'][i]).style.flexDirection='column';
+  });
+  document.getElementById('tabTheory').style.display = idx===1?'block':'none';
+  document.getElementById('tabNotes').style.display = idx===2?'block':'none';
+  document.getElementById('tabResults').style.display = idx===3?'block':'none';
+  document.querySelectorAll('.ltab').forEach((t,i) => {
+    t.style.color = i===idx ? '#e85d26' : '#9090aa';
+    t.style.borderBottomColor = i===idx ? '#e85d26' : 'transparent';
+  });
+  document.getElementById('btnNext').style.display = idx===0?'block':'none';
+  document.getElementById('btnPrev').style.display = idx===0?'block':'none';
+}
+
+// ═══════════ INTERACTIVE WIDGETS ═══════════
+function renderWidget(widgetId, container, lab) {
+  if(!widgetId) return;
+
+  if(widgetId === 'result') {
+    container.innerHTML = '<div style="background:linear-gradient(135deg,#fff2ec,#fdf4ee);border:1.5px solid #fde8dc;border-radius:14px;padding:18px;margin-top:8px">' +
+      '<div style="font-weight:800;font-size:.9rem;color:#e85d26;margin-bottom:8px">🎯 Learning Objectives Achieved</div>' +
+      '<ul style="list-style:none;display:flex;flex-direction:column;gap:7px">' +
+      lab.steps.slice(0,-1).map(s=>'<li style="font-size:.86rem;font-weight:600;color:#55557a;display:flex;align-items:center;gap:8px"><span style="color:#2ecc71;font-weight:900">✓</span>'+s.title+'</li>').join('') +
+      '</ul></div>';
+    return;
+  }
+
+  // ── Titration slider ──
+  if(widgetId === 'titrate') {
+    container.innerHTML = `<div style="margin-top:12px">
+      <div style="font-weight:700;font-size:.85rem;color:#1a1234;margin-bottom:8px">NaOH volume added: <span id="naoh-vol">0.0</span> mL</div>
+      <input type="range" class="range-slider" id="naoh-slider" min="0" max="30" step="0.5" value="0" oninput="updateTitration(this.value)"/>
+      <div style="display:flex;justify-content:space-between;font-size:.72rem;color:#9090aa;margin-top:4px"><span>0 mL</span><span>Endpoint ~23 mL</span><span>30 mL</span></div>
+      <div id="flask-display" style="margin-top:16px;width:80px;height:100px;margin-left:auto;margin-right:auto;background:#fff;border:3px solid #ccc;border-top:none;border-radius:0 0 40px 40px;position:relative;overflow:hidden;display:flex;align-items:flex-end">
+        <div id="flask-fill" style="width:100%;height:60%;background:#e8f5ff;transition:background .3s;border-radius:0 0 38px 38px;"></div>
+      </div>
+      <div id="ph-display" style="text-align:center;margin-top:10px;font-weight:800;font-size:.9rem;color:#1a1234">pH: <span id="ph-val">2.1</span></div>
+    </div>`;
+    return;
+  }
+
+  // ── PCR thermocycle ──
+  if(widgetId === 'thermocycle') {
+    container.innerHTML = `<div style="margin-top:12px">
+      <div style="font-weight:700;font-size:.85rem;color:#1a1234;margin-bottom:10px">PCR Thermocycler</div>
+      <div id="pcr-status" style="display:flex;gap:8px;margin-bottom:12px">
+        <div class="pcr-step" id="pcrs0" style="flex:1;padding:10px;border-radius:10px;background:#fde8dc;border:1.5px solid #f7941d;text-align:center">
+          <div style="font-size:1.2rem">🔥</div><div style="font-size:.72rem;font-weight:800;color:#e85d26">Denature</div><div style="font-size:.68rem;color:#9090aa">95°C</div>
+        </div>
+        <div class="pcr-step" id="pcrs1" style="flex:1;padding:10px;border-radius:10px;background:#f0f0f0;border:1.5px solid #e0e0e0;text-align:center">
+          <div style="font-size:1.2rem">🔩</div><div style="font-size:.72rem;font-weight:800;color:#9090aa">Anneal</div><div style="font-size:.68rem;color:#9090aa">58°C</div>
+        </div>
+        <div class="pcr-step" id="pcrs2" style="flex:1;padding:10px;border-radius:10px;background:#f0f0f0;border:1.5px solid #e0e0e0;text-align:center">
+          <div style="font-size:1.2rem">🧬</div><div style="font-size:.72rem;font-weight:800;color:#9090aa">Extend</div><div style="font-size:.68rem;color:#9090aa">72°C</div>
+        </div>
+      </div>
+      <div style="font-size:.82rem;font-weight:600;color:#55557a;margin-bottom:8px">Cycle: <span id="pcr-cycle">0</span> / 30 &nbsp;|&nbsp; DNA copies: <span id="pcr-copies">1</span></div>
+      <div style="background:#e8e0d8;border-radius:4px;height:8px;margin-bottom:12px"><div id="pcr-bar" style="height:100%;width:0%;background:linear-gradient(90deg,#e85d26,#f7941d);border-radius:4px;transition:width .4s"></div></div>
+      <button class="sim-btn-action" id="pcr-btn" onclick="runPCR()">▶ Start Thermocycler</button>
+    </div>`;
+    return;
+  }
+
+  // ── Mendelian Punnett Square ──
+  if(widgetId === 'punnett1' || widgetId === 'punnett2') {
+    const p1 = widgetId==='punnett1' ? ['T','T'] : ['T','t'];
+    const p2 = widgetId==='punnett1' ? ['t','t'] : ['T','t'];
+    const combos = [p1[0]+p2[0], p1[0]+p2[1], p1[1]+p2[0], p1[1]+p2[1]];
+    const colors = combos.map(c => c.includes('T') ? '#fff2ec' : '#e3f2fd');
+    container.innerHTML = `<div style="margin-top:12px">
+      <div style="font-weight:700;font-size:.85rem;color:#1a1234;margin-bottom:12px">Punnett Square: ${widgetId==='punnett1'?'TT × tt':'Tt × Tt'}</div>
+      <table style="border-collapse:collapse;margin:0 auto">
+        <tr>
+          <td style="width:50px;height:50px;border:2px solid #e8e0d8;background:#f9f6f2"></td>
+          <td style="width:50px;height:50px;border:2px solid #e8e0d8;background:#e85d26;color:#fff;text-align:center;font-weight:900;font-size:1.1rem">${p2[0]}</td>
+          <td style="width:50px;height:50px;border:2px solid #e8e0d8;background:#e85d26;color:#fff;text-align:center;font-weight:900;font-size:1.1rem">${p2[1]}</td>
+        </tr>
+        <tr>
+          <td style="width:50px;height:50px;border:2px solid #e8e0d8;background:#e85d26;color:#fff;text-align:center;font-weight:900;font-size:1.1rem">${p1[0]}</td>
+          <td style="width:50px;height:50px;border:2px solid #e8e0d8;background:${colors[0]};text-align:center;font-weight:800;font-size:1rem;color:#1a1234">${combos[0]}</td>
+          <td style="width:50px;height:50px;border:2px solid #e8e0d8;background:${colors[1]};text-align:center;font-weight:800;font-size:1rem;color:#1a1234">${combos[1]}</td>
+        </tr>
+        <tr>
+          <td style="width:50px;height:50px;border:2px solid #e8e0d8;background:#e85d26;color:#fff;text-align:center;font-weight:900;font-size:1.1rem">${p1[1]}</td>
+          <td style="width:50px;height:50px;border:2px solid #e8e0d8;background:${colors[2]};text-align:center;font-weight:800;font-size:1rem;color:#1a1234">${combos[2]}</td>
+          <td style="width:50px;height:50px;border:2px solid #e8e0d8;background:${colors[3]};text-align:center;font-weight:800;font-size:1rem;color:#1a1234">${combos[3]}</td>
+        </tr>
+      </table>
+      <div style="margin-top:14px;font-size:.82rem;font-weight:600;color:#55557a">
+        ${widgetId==='punnett1'?'All offspring: Tt (heterozygous tall) — 100% tall phenotype':'Genotypes: 1 TT : 2 Tt : 1 tt — Phenotypes: 3 tall : 1 short'}
+      </div>
+    </div>`;
+    return;
+  }
+
+  // ── Gel electrophoresis / radioactive decay / halflife generic viz ──
+  if(widgetId === 'halflife') {
+    container.innerHTML = `<div style="margin-top:12px">
+      <div style="font-weight:700;font-size:.85rem;color:#1a1234;margin-bottom:8px">Decay Count Rate vs Time</div>
+      <div style="display:flex;flex-direction:column;gap:4px" id="decay-bars">
+        ${[840,592,418,296,209,148,105,74,52,37].map((v,i)=>`
+        <div style="display:flex;align-items:center;gap:8px">
+          <div style="font-size:.7rem;font-weight:700;color:#9090aa;width:36px">${i*2}min</div>
+          <div style="flex:1;background:#f0eae2;border-radius:4px;height:16px">
+            <div style="width:${v/840*100}%;height:100%;background:linear-gradient(90deg,#e85d26,#f7941d);border-radius:4px;transition:width 1s"></div>
+          </div>
+          <div style="font-size:.7rem;font-weight:700;color:#e85d26;width:48px">${v} cpm</div>
+        </div>`).join('')}
+      </div>
+      <div style="margin-top:10px;font-size:.8rem;font-weight:700;color:#55557a">t½ ≈ 12.4 minutes (from graph)</div>
+    </div>`;
+    return;
+  }
+
+  // ── ECG trace ──
+  if(widgetId === 'ecg_normal' || widgetId === 'ecg_tachy') {
+    const rate = widgetId==='ecg_normal' ? 72 : 138;
+    const label = widgetId==='ecg_normal' ? 'Normal Sinus Rhythm' : 'Sinus Tachycardia';
+    const color = widgetId==='ecg_normal' ? '#2ecc71' : '#e85d26';
+    container.innerHTML = `<div style="margin-top:12px">
+      <div style="font-weight:700;font-size:.85rem;color:#1a1234;margin-bottom:8px">${label} — ${rate} bpm</div>
+      <div style="background:#0a1628;border-radius:12px;padding:14px;overflow:hidden">
+        <svg width="100%" height="80" viewBox="0 0 500 80">
+          <polyline fill="none" stroke="${color}" stroke-width="2" stroke-linecap="round"
+            points="${generateECG(rate)}"/>
+        </svg>
+      </div>
+      <div style="display:flex;gap:16px;margin-top:10px">
+        <div style="font-size:.75rem;font-weight:700;color:#55557a">Rate: <span style="color:#e85d26">${rate} bpm</span></div>
+        <div style="font-size:.75rem;font-weight:700;color:#55557a">Rhythm: <span style="color:#e85d26">Regular</span></div>
+        <div style="font-size:.75rem;font-weight:700;color:#55557a">P waves: <span style="color:#2ecc71">Present</span></div>
+      </div>
+    </div>`;
+    return;
+  }
+
+  // ── Michaelis-Menten curve ──
+  if(widgetId === 'mm_curve') {
+    container.innerHTML = `<div style="margin-top:12px">
+      <div style="font-weight:700;font-size:.85rem;color:#1a1234;margin-bottom:8px">Michaelis-Menten Curve</div>
+      <div style="background:#f9f6f2;border:1.5px solid #e8e0d8;border-radius:12px;padding:14px">
+        <svg width="100%" height="140" viewBox="0 0 400 140">
+          <line x1="40" y1="10" x2="40" y2="120" stroke="#ccc" stroke-width="1"/>
+          <line x1="40" y1="120" x2="390" y2="120" stroke="#ccc" stroke-width="1"/>
+          <text x="20" y="14" font-size="10" fill="#9090aa">v</text>
+          <text x="395" y="124" font-size="10" fill="#9090aa">[S]</text>
+          <line x1="40" y1="20" x2="390" y2="20" stroke="#e8e0d8" stroke-width="1" stroke-dasharray="4"/>
+          <text x="42" y="18" font-size="9" fill="#e85d26">Vmax=8.2</text>
+          <path d="M40,120 Q80,80 120,52 Q180,30 260,22 Q320,18 390,17" fill="none" stroke="#e85d26" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="40" y1="70" x2="130" y2="70" stroke="#2563eb" stroke-width="1" stroke-dasharray="3"/>
+          <line x1="130" y1="70" x2="130" y2="120" stroke="#2563eb" stroke-width="1" stroke-dasharray="3"/>
+          <text x="125" y="132" font-size="9" fill="#2563eb">Km=3.1mM</text>
+          <circle cx="40" cy="120" r="3" fill="#e85d26"/>
+          <circle cx="90" cy="70" r="3" fill="#e85d26"/>
+          <circle cx="150" cy="44" r="3" fill="#e85d26"/>
+          <circle cx="220" cy="30" r="3" fill="#e85d26"/>
+          <circle cx="310" cy="22" r="3" fill="#e85d26"/>
+          <circle cx="380" cy="19" r="3" fill="#e85d26"/>
+        </svg>
+      </div>
+      <div style="font-size:.78rem;font-weight:600;color:#55557a;margin-top:8px">Vmax = 8.2 μmol/min &nbsp;|&nbsp; Km = 3.1 mM</div>
+    </div>`;
+    return;
+  }
+
+  // ── Spectrum display ──
+  if(widgetId === 'spectrum') {
+    const elements = [{el:'Na',color:'#FFD700',nm:'589'},{el:'Cu',color:'#00CED1',nm:'515'},{el:'Li',color:'#DC143C',nm:'671'},{el:'K',color:'#9370DB',nm:'766'}];
+    container.innerHTML = `<div style="margin-top:12px">
+      <div style="font-weight:700;font-size:.85rem;color:#1a1234;margin-bottom:10px">Emission Spectra</div>
+      ${elements.map(e=>`
+      <div style="margin-bottom:10px">
+        <div style="font-size:.75rem;font-weight:800;color:#55557a;margin-bottom:4px">${e.el} — ${e.nm} nm</div>
+        <div style="background:#0a0a0a;border-radius:6px;height:20px;position:relative;overflow:hidden">
+          <div style="position:absolute;left:${(parseInt(e.nm)-380)/(780-380)*100}%;top:0;bottom:0;width:3px;background:${e.color};box-shadow:0 0 8px ${e.color}"></div>
+        </div>
+      </div>`).join('')}
+    </div>`;
+    return;
+  }
+
+  // ── Photosynthesis rate widget ──
+  if(widgetId === 'photo_rate') {
+    const rates = [1.2,2.8,5.1,7.4,8.2,8.3];
+    const intensities = [0,20,40,60,80,100];
+    container.innerHTML = `<div style="margin-top:12px">
+      <div style="font-weight:700;font-size:.85rem;color:#1a1234;margin-bottom:8px">O₂ Production vs Light Intensity</div>
+      <div style="display:flex;align-items:flex-end;gap:8px;height:80px;padding:0 8px">
+        ${rates.map((r,i)=>`<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px">
+          <div style="font-size:.65rem;color:#e85d26;font-weight:800">${r}</div>
+          <div style="width:100%;background:linear-gradient(180deg,#2ecc71,#27ae60);border-radius:4px 4px 0 0;height:${r/8.3*70}px;transition:height .5s"></div>
+          <div style="font-size:.62rem;color:#9090aa">${intensities[i]}%</div>
+        </div>`).join('')}
+      </div>
+      <div style="font-size:.75rem;font-weight:600;color:#55557a;margin-top:8px;text-align:center">Light saturation point ≈ 80% intensity (8.2 μmol O₂/min)</div>
+    </div>`;
+    return;
+  }
+
+  // Default: show a simple "activity complete" card for any unspecified widget
+  container.innerHTML = `<div style="background:#f0fdf4;border:1.5px solid #86efac;border-radius:12px;padding:16px;margin-top:12px;display:flex;align-items:center;gap:12px">
+    <span style="font-size:1.6rem">✅</span>
+    <div style="font-size:.88rem;font-weight:700;color:#166534">Step activity completed. Click Continue to proceed to the next step.</div>
+  </div>`;
+}
+
+// ═══════════ ECG GENERATOR ═══════════
+function generateECG(bpm) {
+  const beatWidth = Math.round(500 / (bpm / 60 * 3));
+  let pts = [];
+  let x = 0;
+  while(x < 500) {
+    // baseline
+    pts.push(`${x},65`);
+    // P wave
+    pts.push(`${x+beatWidth*0.1},65`);
+    pts.push(`${x+beatWidth*0.15},50`);
+    pts.push(`${x+beatWidth*0.2},65`);
+    // PR segment
+    pts.push(`${x+beatWidth*0.3},65`);
+    // Q
+    pts.push(`${x+beatWidth*0.35},72`);
+    // R (spike)
+    pts.push(`${x+beatWidth*0.38},10`);
+    // S
+    pts.push(`${x+beatWidth*0.42},75`);
+    // ST segment
+    pts.push(`${x+beatWidth*0.5},65`);
+    // T wave
+    pts.push(`${x+beatWidth*0.62},45`);
+    pts.push(`${x+beatWidth*0.72},65`);
+    // TP segment
+    pts.push(`${x+beatWidth},65`);
+    x += beatWidth;
+  }
+  return pts.join(' ');
+}
+
+// ═══════════ PCR ANIMATION ═══════════
+let pcrRunning = false;
+function runPCR() {
+  if(pcrRunning) return;
+  pcrRunning = true;
+  document.getElementById('pcr-btn').disabled = true;
+  document.getElementById('pcr-btn').textContent = '⏳ Running…';
+  let cycle = 0;
+  const phases = ['pcrs0','pcrs1','pcrs2'];
+  const colors = ['#fde8dc','#e3f2fd','#e8f5e9'];
+  const borders = ['#f7941d','#2563eb','#2ecc71'];
+  const textColors = ['#e85d26','#2563eb','#2ecc71'];
+  function doPhase(p) {
+    phases.forEach((id,i) => {
+      const el = document.getElementById(id);
+      if(!el) return;
+      el.style.background = i===p ? colors[i] : '#f0f0f0';
+      el.style.borderColor = i===p ? borders[i] : '#e0e0e0';
+      el.querySelector('div:nth-child(2)').style.color = i===p ? textColors[i] : '#9090aa';
+    });
+  }
+  function nextPhase(cycle, phase) {
+    if(cycle >= 30) {
+      document.getElementById('pcr-cycle').textContent = '30';
+      document.getElementById('pcr-copies').textContent = '1,073,741,824';
+      document.getElementById('pcr-bar').style.width = '100%';
+      document.getElementById('pcr-btn').textContent = '✅ Complete!';
+      phases.forEach(id => { const el=document.getElementById(id); if(el){el.style.background='#f0fdf4';el.style.borderColor='#86efac';}});
+      pcrRunning = false;
+      return;
+    }
+    doPhase(phase);
+    setTimeout(() => {
+      const np = phase+1;
+      if(np < 3) {
+        nextPhase(cycle, np);
+      } else {
+        const nc = cycle+1;
+        document.getElementById('pcr-cycle').textContent = nc;
+        document.getElementById('pcr-copies').textContent = Math.pow(2,nc).toLocaleString();
+        document.getElementById('pcr-bar').style.width = (nc/30*100)+'%';
+        nextPhase(nc, 0);
+      }
+    }, 180);
+  }
+  nextPhase(0, 0);
+}
+
+// ═══════════ TITRATION ═══════════
+function updateTitration(v) {
+  const vol = parseFloat(v);
+  document.getElementById('naoh-vol').textContent = vol.toFixed(1);
+  let ph;
+  if(vol < 20) ph = 2.1 + vol * 0.08;
+  else if(vol < 22.5) ph = 3.7 + (vol-20)*1.2;
+  else if(vol < 23) ph = 6.5 + (vol-22.5)*8;
+  else ph = Math.min(12.5, 10.5 + (vol-23)*0.2);
+  document.getElementById('ph-val').textContent = Math.min(12.5,ph).toFixed(1);
+  const fill = document.getElementById('flask-fill');
+  if(ph < 7) fill.style.background = '#e8f5ff';
+  else if(ph < 8.5) fill.style.background = '#ffcce5';
+  else fill.style.background = '#f5a0d0';
+}
+
+// ═══════════ EXISTING PAGE SCRIPTS ═══════════
 function switchTab(idx, el) {
   document.querySelectorAll('.cap-tab').forEach(t=>t.classList.remove('act'));
   document.querySelectorAll('.cap-panel').forEach(p=>p.classList.remove('act'));
   el.classList.add('act');
   document.getElementById('cap'+idx).classList.add('act');
 }
-
-// Filter chips
 document.querySelectorAll('.filter-row .chip').forEach(chip=>{
   chip.addEventListener('click',function(){
     const row=this.closest('.filter-row');
@@ -1240,8 +2035,6 @@ document.querySelectorAll('.filter-row .chip').forEach(chip=>{
     this.classList.add('act');
   });
 });
-
-// Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(a=>{
   a.addEventListener('click',e=>{
     const t=document.querySelector(a.getAttribute('href'));
